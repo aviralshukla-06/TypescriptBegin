@@ -68,3 +68,11 @@ interface Aviral {
     class: "BE",
     year: 4
 }
+
+
+
+type S = string | number
+
+let x: S = 5;
+let y: S = "A";
+
