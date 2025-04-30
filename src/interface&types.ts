@@ -55,4 +55,27 @@ let Avi = new Manager("Aviral", 22);
 console.log(Avi.name, Avi.age, Avi.isLegal());
 
 
-// Note: We can extra things  in class but not less than defined one 
+// Note: We can extra things  in class but not less than defined one
+
+// difference between types and interface:
+// 1 -> we can implement class and object using interface but not using types
+// 2 -> We can give more than two primitive to single variable using type but not in interface
+// e.g : type user = string | number
+// interface user : string
+
+// difference between interface and abstract class:
+// they serve same but in interface you can not define inbuilt funcyion but in abstract class yo can
+// e.g:
+// interface user {
+//     name:string,
+//     age : number
+// }
+
+// abstract class user={
+//     name : string,
+//     age:number,
+
+//     greet()=> {
+//         console.log("Hey");
+//     }
+// }
