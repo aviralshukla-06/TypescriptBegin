@@ -30,3 +30,36 @@ type pertiallyUpdateA = Partial<updatedA>
 function partiallyUpdateDb(updatedA: pertiallyUpdateA) {
     // hit db queries to update 
 }
+
+// **Readonly** 
+// it lets us not to update anything that is defined usder reaadonly 
+
+const dragon = {
+    fname: "dagg",
+    age: 38
+
+}
+
+dragon.fname = "China"
+// being constant we can update it cause we are not changing the dragon class referance but the objects of it 
+// if we change whole ref it wont allow 
+const arr = [1, 2, 3, 4]
+arr[2] = 4;
+
+//  here too we are updating element not the 'a' as whole 
+
+// so we use readonly 
+
+// interface A {
+//     name: string;
+//     email: string;
+//     age: number;
+//     password: string;
+// }
+
+const config: Readonly<A> = {
+    name: "A",
+    email: "asd",
+    age: 7,
+    password: "3t28"
+};
