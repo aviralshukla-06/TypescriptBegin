@@ -1,0 +1,4 @@
+node_modules/
+dist/
+Postgres/node_modules
+Postgres/dist
